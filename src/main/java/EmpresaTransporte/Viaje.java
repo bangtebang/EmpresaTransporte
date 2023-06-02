@@ -35,4 +35,15 @@ public class Viaje {
 		this.ciudadDestino=ciudadDestino;
 		this.bus=bus;
 	}
+	public Conductor getConductor() {
+		return conductor;
+	}
+	public Ciudad getCiudadOrigen() {
+		return ciudadOrigen;
+	}
+	public Ciudad getCiudadDestino() {
+		return ciudadDestino;
+	}
+
+
 }

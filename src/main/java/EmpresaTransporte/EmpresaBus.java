@@ -37,8 +37,11 @@ public class EmpresaBus {
 	}
 
 	public Bus agregarBus(String patente, String marca, String modelo) {
-		throw new UnsupportedOperationException();
+		Bus bus = new Bus(patente, marca,modelo);
+		this.buses.add(bus);
+		return bus;
 	}
+
 
 	public Conductor agregarConductor(String nombre, String apelllido, int numeroTelefono, String tipoLicencia) {
 		throw new UnsupportedOperationException();

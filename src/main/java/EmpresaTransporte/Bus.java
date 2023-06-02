@@ -41,4 +41,7 @@ public class Bus {
 		this.empresaBus= empresaBus;
 		this.viajes= new ArrayList<Viaje>();
 	}
+	public EmpresaBus getEmpresaBus() {
+		return empresaBus;
+	}
 }
