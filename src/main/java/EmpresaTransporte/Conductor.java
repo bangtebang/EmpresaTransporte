@@ -42,7 +42,11 @@ public class Conductor {
 		this.tipoLicencia = tipoLicencia;
 	}
 
-	public Conductor() {
-		throw new UnsupportedOperationException();
+	public Conductor(String nombre, String apellido, int numeroTelefono, String tipoLicencia) {
+		this.nombre= nombre;
+		this.apellido=apellido;
+		this.numeroTelefono=numeroTelefono;
+		this.tipoLicencia=tipoLicencia;
+		this.viajes= new ArrayList<Viaje>();
 	}
 }

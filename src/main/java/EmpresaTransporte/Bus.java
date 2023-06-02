@@ -34,7 +34,11 @@ public class Bus {
 		this.modelo = modelo;
 	}
 
-	public Bus() {
-		throw new UnsupportedOperationException();
+	public Bus(String patente, String marca, String modelo) {
+		this.modelo= modelo;
+		this.marca=marca;
+		this.patente=patente;
+		this.empresaBus= empresaBus;
+		this.viajes= new ArrayList<Viaje>();
 	}
 }

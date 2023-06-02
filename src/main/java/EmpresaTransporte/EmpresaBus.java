@@ -56,7 +56,10 @@ public class EmpresaBus {
 		throw new UnsupportedOperationException();
 	}
 
-	public EmpresaBus() {
-		throw new UnsupportedOperationException();
+	public EmpresaBus(String rut, String direccion, String redesSociales) {
+		this.rut=rut;
+		this.direccion=direccion;
+		this.redesSociales=redesSociales;
+		this.buses= new ArrayList<Bus>();
 	}
 }

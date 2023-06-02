@@ -1,5 +1,6 @@
 package EmpresaTransporte;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Viaje {
@@ -26,7 +27,12 @@ public class Viaje {
 		this.horaLlegada = horaLlegada;
 	}
 
-	public Viaje() {
-		throw new UnsupportedOperationException();
+	public Viaje(Date horaSalida, Date horaLlegada) {
+		this.horaLlegada=horaLlegada;
+		this.horaSalida=horaSalida;
+		this.conductor= conductor;
+		this.ciudadOrigen=ciudadOrigen;
+		this.ciudadDestino=ciudadDestino;
+		this.bus=bus;
 	}
 }

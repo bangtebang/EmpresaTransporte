@@ -29,7 +29,9 @@ public class Ciudad {
 		this.longitud = longitud;
 	}
 
-	public Ciudad() {
-		throw new UnsupportedOperationException();
+	public Ciudad(String nombre, String latitud, String longitud) {
+		this.nombre= nombre;
+		this.latitud=latitud;
+		this.longitud=longitud;
 	}
 }
