@@ -11,6 +11,7 @@ public class EmpresaBus {
 	private String direccion;
 	private String redesSociales;
 	private ArrayList<Bus> buses = new ArrayList<Bus>();
+	private ArrayList<Conductor> conductor = new ArrayList<Conductor>();
 
 	public String getRut() {
 		return this.rut;
@@ -44,9 +45,10 @@ public class EmpresaBus {
 
 
 	public Conductor agregarConductor(String nombre, String apelllido, int numeroTelefono, String tipoLicencia) {
-		throw new UnsupportedOperationException();
+		Conductor conductor = new Conductor(nombre,apelllido,numeroTelefono,tipoLicencia);
+		this.conductor.add(conductor);
+		return conductor;
 	}
-
 	public List<Viaje> asociarViajesBus(Date horaSalida, Date horaLlegada, String patente, String marca, String modelo) {
 		throw new UnsupportedOperationException();
 	}
@@ -64,5 +66,6 @@ public class EmpresaBus {
 		this.direccion=direccion;
 		this.redesSociales=redesSociales;
 		this.buses= new ArrayList<Bus>();
+		this.conductor= new ArrayList<Conductor>();
 	}
 }
