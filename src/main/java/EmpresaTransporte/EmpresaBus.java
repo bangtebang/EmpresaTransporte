@@ -54,7 +54,13 @@ public class EmpresaBus {
 	}
 
 	public List<Bus> quitarBusPatente(String patente) {
-		throw new UnsupportedOperationException();
+		List<Bus> buses = new ArrayList<Bus>();
+		for (Bus bus : this.buses) {
+			for (Bus buses : bus.getPatente()) {
+				if (patente.equals(patente)) {
+				}
+	}}
+		return buses;
 	}
 
 	public List<Viaje> visualizarBusesHoraSalidaCiudadDestino(Date horaSalida, String nombre, String latitud, String longitud) {
